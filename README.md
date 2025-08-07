@@ -1,1 +1,1 @@
-This repository contains code and notes from my learning journey through the book "Hands-On Machine Learning with Scikit-Learn, Keras, and TensorFlow." It includes practical implementations of key machine learning concepts and hands-on exercises.
+This repository contains code and notes from my learning journey through the book "Hands-On Machine Learning with Scikit-Learn, Keras, and TensorFlow.", by Aurélien Géron. It includes practical implementations of key machine learning concepts and hands-on exercises.
