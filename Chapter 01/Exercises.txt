@@ -1,0 +1,62 @@
+1 - Como você definiria o aprendizado de máquina?
+R: É o capacidade dos computadores de aprender sem explicitamente programá-los.
+
+2 - Você consegue apontar quatro tipos de problemas que se destacam?
+R: ChatBots, classificação de imagens, predições nas finanças e geração de textos.
+
+3 - O que é um conjunto de treinamento rotulado?
+R: É um conjunto de treinamento que inclui as soluções desejadas.
+
+4 - Quais são as duas tarefas supervisionadas mais comuns?
+R: Tarefas de classificação e de regressão.
+
+5 - Você consegue citar quatro tarefas comuns não supervisionadas?
+R: Clusterização, visualização, redução de dimensionalidade e detecção de anomalias.
+
+6 - Qual tipo de algoritmo de aprendizado de máquina você usaria para possibilitar que um robô andasse por aí em lugares inexplorados?
+R: Aprendizado por reforço.
+
+7 - Que tipo de algoritmo você utilizaria a fim de segmentar seus clientes em diversos grupos?
+R: Utilizaria um algoritmo do tipo não supervisonado para clusterizar (dividir em grupos) os clientes.
+
+8 - Você acha que o problema de detecção de spam tem a ver com o aprendizado supervisionado ou não supervisionado?
+R: Com o aprendizado supervisionado, visto que devemos ter um conjunto rotulado para o treinamento.
+
+9 - O que é um sistema de aprendizado online?
+R: É um sistema que aprender de forma incremental. Isso torna o sistema capaz de aprender contimuamente e adaptar-se rapidamente a dados variáveis.
+
+10 - O que é um aprendizado out-of-score?
+R: É um sistema de aprendizado online utilizado para treinar sistemas em grandes conjuntos de dados que não cabem na memória principal de uma máquina.
+
+11 - Qual tipo de algoritmo de aprendizado depende de uma medida de similaridade para efetuar predições?
+R: Aprendizado por instâncias: o sistema aprende os exemplos por meio da memorização e depois generaliza em novos casos, ao empregar uma medida de similaridade a fim de compará-los a outros exemplos aprendidos.
+
+12 - Qual a diferença entre um parâmetro de modelo e o hiperparâmetro do algoritmo de aprendizado?
+R: Os parâmetros do modelo determinam o que ele predirá dada uma nova instância. Um algoritmo de aprendizado tenta identificar os melhores valores para que o modelo seja bem generalizado para novas instâncias. Já o hiperparâmetro é um parâmetro do algoritmo de aprendizado e não do modelo.
+
+13 - Para que servem os algoritmos baseados em modelos? Qual é a estratégia mais comum que eles utilizam para serem bem-sucedidos? Como eles fazem predições?
+R: Algoritmos de aprendizado baseados em modelo procuram um valor ideal para os parâmetros do modelo, de forma que o modelo seja bem generalizado para novas instâncias. Normalmente, treinamos esses sistemas minimizando uma função de custo que calcula o nível de habilidade de um sistema
+em realizar predições sobre os dados de treinamento, além de uma penalidade para a complexidade do modelo caso ele seja regularizado. Para realizar predições, fornecemos características da nova instância na função de predição do modelo, usando os valores dos parâmetros encontrados pelo algoritmo
+de aprendizagem.
+
+14 - Você pode mencionar quatro dos principais desafios do aprendizado de máquina?
+R: Quantidade insuficiente de dados de treinamento, dados de treinamento não representativos, dados de baixa qualidade, características irrelevantes, sobreajuste (overfitting) e sobajuste (underfitting) dos dados de treinamento.
+
+15 - Caso o modelo tenha um bom desempenho nos dados de treinamento, mas a generalização deixa a desejar em instâncias novas, o que está acontecendo? Você pode exemplificar três possíveis soluções?
+R: Neste caso está ocorrendo um sobreajuste, onde o modelo fica muito bom nas instâncias de treinamento, mas ruim na predição de novas instâncias. Algumas soluções possíveis são escolher um modelo mais simples (com menos parâmetros), coletar mais dados de treinamento e reduzir o ruído
+no treinamento.
+
+16 - O que é um conjunto de testes e por que você o utilizaria?
+R: Conjunto de testes é uma parte do conjunto de dados, normalmente 20%, utilizada para validar o treinamento, ou seja, após o treinamento, rodamos o modelo no conjuntos de testes e verificamos o desempenho em instâncias novas.
+
+17 - Qual é o propósito de um conjunto de validação?
+R: É usado para comparar modelos. Possibilita escolher o melhor modelo e ajustar os hiperparâmetros.
+
+18 - O que é um train-dev set, quando é necessário e como usá-lo?
+R: O train-dev set é utilizado quando há risco de incompatibilidade dos entre os dados de treinamento e os dados usados nos conjuntos de validação e teste (que devem ser sempre o mais próximo dos dados usados em produção). O train-dev set é uma parte do conjunto de treinamento oferecido.
+O modelo é treinado no resto do conjunto de treinamento e avaliado tanto no conjunto train-dev quanto no conjunto de validação. Caso o modelo tenho um bom desempenho no conjunto de treinamento, mas não no conjunto train-dev, provavelmente ele se sobreajustará no conjunto de treinamento.
+Se ele tiver um bom desempenho no conjunto de treinamento e no train-dev, mas não no conjunto de validação, provavelmente há uma incompatibilidade de dados substancial entre os dados de treinamento e os dados de validação + teste, e você deve tentar melhorar os dados de treinamento para
+torná-los parecidos com os dados de validação + teste.
+
+19 - O que pode sair de errado se você ajustar os hiperparâmetros utilizando o conjunto de teste?
+R: Ocorre o risco de sobreajustar o conjunto de teste e o erro de generalização ser bem menor que o real.
